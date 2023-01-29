@@ -1,0 +1,11 @@
+alert(); //show a pop up 
+document.write(); //write in webpage
+console.log(); //write in console
+var num = "30";
+num = parseInt(num);
+var element = document.getElementById("IDNAME"); //get the element in a variable named element.
+element.innerHtml = "Write what you want to change" //It is changed through the document
+
+var element = document.getElementsByClass("");
+
+

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehrab Evan</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: Cambria;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .linker {
+        /* display: flex; */
+        /* tab-size: 1; */
+        padding: 30px;
+        font-size: 30px;
+        font-style: bold;
+    }
+
+    .linker:hover
+    {
+        color: rgb(136, 249, 230);
+        font-size: 33px;
+    }
+
+    a {
+        color: rgb(226, 195, 210);
+        text-decoration: none;
+    }
+
+    .Navbar {
+        text-align: center;
+        margin: 50px;
+        height: 70px;
+        font-size: 70px;
+    }
+
+    .bodyclass {
+        background-color: rgb(26, 38, 53);
+    }
+
+    h1 {
+        color: rgb(207, 166, 234);
+        font-size: 50px;
+        margin-bottom: -20px;
+    }
+
+    .NameAnim:hover
+    {
+        color: rgb(237, 96, 253);
+        cursor: pointer;
+        font-size: 52px;
+    }
+
+    h2
+    {
+        color: rgb(209, 225, 201);
+        font-size: 30px;
+        animation: mymove 2s infinite;
+        position: relative;
+    }
+
+    /* @keyframes mymove {
+         from {top: 10px;}
+         to {bottom: 0px;}
+    } */
+
+    .AboutmeBio {
+        color: rgb(170, 206, 238);
+        font-size: 30px;
+    }
+
+    .writings {
+        font-size: 22px;
+        color: aliceblue;
+        line-height: 80%;
+        /* margin-top: -20px; */
+    }
+
+    .EDUANIM:hover
+    {
+        color: rgb(102, 169, 252);
+        cursor: pointer;
+    }
+
+    /* .EDUCATION
+    {
+        height: 800px;
+    } */
+
+    .EDU_Card
+    {
+        width: 350px;
+        margin: 30px;
+        /* box-sizing: border-box; */
+        box-shadow: 1px 2px 4px black;
+        background-color: rgb(12, 7, 17);
+    }
+
+    .EDU_Card:hover
+    {   
+        box-shadow: 1px 2px 4px rgb(231, 193, 193);
+        cursor: pointer;
+    }
+
+    .Card-img-style
+    {
+        width: 100%;
+        height: 35%;
+    }
+
+    .EDU_Card_Title
+    {
+        color: rgb(162, 252, 252);
+        font-size: 2rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .EDU_Card_Body
+    {
+        height: min-content;
+    }
+
+    .School_Description
+    {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .College_Description
+    {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .University_Description
+    {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Skills_Card
+    {
+        width: 250px;
+        margin: 30px;
+        height: 550px;
+        /* box-sizing: border-box; */
+        box-shadow: 1px 2px 4px black;
+        background-color: rgb(12, 7, 17);
+    }
+    
+    .Skills_Card:hover
+    {
+        box-shadow: 1px 2px 4px rgb(231, 193, 193);
+        cursor: pointer;
+    }
+
+    .Skills_Card_Title
+    {
+        color: rgb(162, 252, 252);
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Skills_Card_Description
+    {
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: antiquewhite;
+    }
+
+    .Skill-Card-img-style
+    {
+        width: 100%;
+        height: 35%;
+    }
+
+    .Project_Link:hover
+    {
+        font-size: 22px;
+        color: rgb(231, 145, 248);
+    }
+
+    .Works_Card
+    {
+        width: 270px;
+        margin: 30px;
+        height: 550px;
+        /* box-sizing: border-box; */
+        box-shadow: 1px 2px 4px black;
+        background-color: rgb(12, 7, 17);
+    }
+
+    .Works_Card:hover
+    {
+        box-shadow: 1px 2px 4px rgb(231, 193, 193);
+        cursor: pointer;
+    }
+
+    .Follow_Card
+    {
+        width: 40px;
+        height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .followMeImg
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Follow_Card:hover
+    {
+        width: 50px;
+        height: 40px;
+        box-shadow: 1px, 2px, 3px white;
+    }
+</style>
+
+<body class="bodyclass">
+
+    <!-- Navigation Bar -->
+    <div class="Navbar">
+        <a class="linker" href="index.html" style="color: rgb(125, 157, 251);">About Me</a>
+        <a class="linker" href="#Education">Education</a>
+        <a class="linker" href="#Skills">Skills</a>
+        <a class="linker" href="#Projects">Projects</a>
+        <a class="linker" href="#Works">Works</a>
+        <a class="linker" href="#Participations">Participations</a>
+        <a class="linker" href="#FunFacts ">Fun Facts</a>
+        <a class="linker" href="contact.html">Contact</a>
+    </div>
+
+    <!-- About Me -->
+    <div style="display: flex; margin: 20px 50px;">
+
+        <div style="padding:20px; margin-top: 20px; float: left; width: 50%; height: 600px;">
+            <h1>Hy!</h1>
+            <h1>I am</h1><h1 class="NameAnim"> Mehrab Evan</h1>
+            <p class="AboutmeBio">Computer Science and Engineering Student</p>
+            <br>
+            <p class="writings">5th semester student with almost 2 years of experience in Competitive Programming</p>
+            <p class="writings">Currently working on Web Programming and robotics</p>
+            <p class="writings">Experienced in Software development using Java, C++, Python, SQL, NOSQL &&</p>
+            <p class="writings">Android Development (Android Studio) && Discord Bot Coding && Unity 3D C# &&</p>
+            <p class="writings">Blender 3D Design && UI Designing && Graphic Designing</p>
+            <p class="writings">I am Tech Enthusiastic😁</p>
+        </div>
+        <div style="width:30%; margin-top: 20px; padding-top: 10px; padding-left : 100px ; padding-bottom: 10px; float: left; height: 600px;">
+            <img src="image/MEVAN.png">
+        </div>
+
+        <div style="justify-content: center; width:20%; margin-top: 190px;  padding-top: 20px; padding-left : 80px; padding-bottom: 10px; float: left; height: 300px;">
+            <div style="display:flex; justify-content: center;">
+                <h2>Follow Me On</h2>
+            </div>
+            <div style="display:flex; justify-content: center;">
+                <div class="Follow_Card">
+                    <br>
+                    <a href="https://www.linkedin.com/in/md-mehrab-evan-029a06197?fbclid=IwAR23O1p8cru2m6tMhzrplqza2Wd_JKBCfKU1VpHWn_ID5meQiVhNTaUEZMw"><img src="image/in.png" class="followMeImg"></a>
+                </div>
+                <div class="Follow_Card">
+                    <br>
+                    <a href="https://github.com/Mehrab-Evan"><img src="image/Githubfollowme.png" class="followMeImg"></a>
+                </div>
+                <div class="Follow_Card">
+                    <br>
+                    <a href="https://www.facebook.com/mehrab.evan"><img src="image/facebook.png" class="followMeImg"></a>
+                </div>
+                <div class="Follow_Card">
+                    <br>
+                    <a href="https://www.instagram.com/mehrab_evan/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR297tYH0x90aDvPtK2nBXVsRKcQ1esK9XPKt_1HgBsCDM7ut_Dl3yi7Vzg"><img src="image/insta.png" class="followMeImg"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Education-Cards -->
+    <!-- Education-Cards -->
+    <!-- Education-Cards -->
+    <div style="clear:left;">
+        <div class="Education" id="Education" style="justify-content: center; display:flex; background-color: rgb(22, 28, 36); clear: left; height:min-content;">
+            <!-- <h2 class="EDUANIM">Education</h2> -->
+            <div class="Navbar">
+                <a class="linker" href="index.html">About Me</a>
+                <a class="linker" href="#Education" style="color: rgb(125, 157, 251);">Education</a>
+                <a class="linker" href="#Skills">Skills</a>
+                <a class="linker" href="#Projects">Projects</a>
+                <a class="linker" href="#Works">Works</a>
+                <a class="linker" href="#Participations">Participations</a>
+                <a class="linker" href="#FunFacts">Fun Facts</a>
+                <a class="linker" href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="Education" id="Education" style="justify-content: center; display:flex; background-color: rgb(22, 28, 36); clear: left; height:min-content;">
+            <div class="EDU_Card">
+                <img src="image/IIUCS.jpg" alt="" class="Card-img-style">
+                <div class="EDU_Card_Body">
+                    <div class="EDU_Card_Title">
+                        International Islamic University Chittagong
+                    </div>  
+                    <div class="University_Description">
+                        <p style="color: rgb(222, 179, 226); font-size:35px">Computer Science and Engineering</p>
+                        <p style="color: white; font-size:20px">Bsc (since 2020)</p>
+                        <p style="color: white; font-size:30px">CGPA : 3.745 (till 4th)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="EDU_Card">
+                <img src="image/Mohsin.jpg" alt="" class="Card-img-style">
+                <div class="EDU_Card_Body">
+                    <div class="EDU_Card_Title">
+                        Govt. Hazi Muhammad Mohsin College
+                    </div>  
+                    <div class="College_Description">
+                        <p style="color: rgb(222, 179, 226); font-size:35px">HSC</p>
+                        <p style="color: white; font-size:20px">2019</p>
+                        <p style="color: white; font-size:30px">GPA : 4.83</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="EDU_Card">
+                <img src="image/Collegiate.jpg" alt="" class="Card-img-style">
+                <div class="EDU_CardBody">
+                    <div class="EDU_Card_Title">
+                        Chittagong Collegiate School
+                    </div>  
+                    <div class="School_Description">
+                        <p style="color: rgb(222, 179, 226); font-size:35px">SSC</p>
+                        <p style="color: white; font-size:20px">2017</p>
+                        <p style="color: white; font-size:30px">GPA : 5</p>
+                        <p style="color: rgb(222, 179, 226); font-size:35px">JSC</p>
+                        <p style="color: white; font-size:20px">2014</p>
+                        <p style="color: white; font-size:30px;">GPA : 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Skills-Card -->
+    <!-- Skills-Card -->
+    <!-- Skills-Card -->
+    <div class="Skills" id="Skills" style="justify-content: center; display:flex; background-color: rgb(30, 42, 59); padding: 20px; height:min-content;">
+        <!-- <h2 class="EDUANIM">Skills</h2> -->
+        <div class="Navbar">
+            <a class="linker" href="index.html">About Me</a>
+            <a class="linker" href="#Education">Education</a>
+            <a class="linker" href="#Skills" style="color: rgb(125, 157, 251);">Skills</a>
+            <a class="linker" href="#Projects">Projects</a>
+            <a class="linker" href="#Works">Works</a>
+            <a class="linker" href="#Participations">Participations</a>
+            <a class="linker" href="#FunFacts">Fun Facts</a>
+            <a class="linker" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Skills-Card 1-->
+    <div class="Skills" id="Skills" style="justify-content: center; display:flex; background-color: rgb(30, 42, 59); padding: 20px; height:min-content;">
+        <div class="Skills_Card">
+            <img src="image/codeimg.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Programming Experience
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Have experience in C, C++, Java, Python, C#, HTML, CSS, Javascript, PHP</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/DS.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Data Structures
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Learned Array, String, Structure, Class, OOP, Graph, Tree, Stack, Queue, Linked List, Hashing and so on.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Algo.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Algorithms
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Learned Algorithms on Searching, Sorting, BFS, DFS, Diajkstra, Bellman Ford, Floyd Warshal, Knapsack, Prims, Kruskal and so on</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Skills_Card">
+            <img src="image/codeimg.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Competitive Programming
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>I have an experience of Competitive Programming for almost 2 years. Regularly Solved Problems in various Online Judges.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Skills_Card">
+            <img src="image/DB.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Database Management System
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>MySQL</p>
+                    <p>Firebase</p>
+                    <p>ER Diagram</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Card 2 -->
+    <div class="Skills" id="Skills" style="justify-content: center; display:flex; background-color: rgb(30, 42, 59); padding: 20px; height:min-content;">
+        <div class="Skills_Card">
+            <img src="image/git.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Git and Github
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Version Controlling System Experience with Git and Github.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Skills_Card">
+            <img src="image/blender.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Blender 3D
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Experience in Basic 3D Modeling, Rendering and Animation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/unity.png" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Unity 3D
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Little Experience in Unity 3D with C# game development.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Android.png" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Android Studio
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Little Experience in Android Development using Android Studio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Illustrator.png" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Adobe Illustrator
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Little Experience in Graphic Designing using Adobe Illustrator.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Skills-Card 3 -->
+    <div class="Skills" id="Skills" style="justify-content: center; display:flex; background-color: rgb(30, 42, 59); clear: left; height:min-content;">
+
+        <div class="Skills_Card">
+            <img src="image/SD.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Software Development
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Experienced with Software Development using Java, Python, C++, QT, SQL etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Arduino.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Robotics
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Experience in Robotics with Arduino Uno R3 Microcontroller.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/toc.png" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Theory of Computation <br>
+                    &&
+                    Compiler Design
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Learnt about Compiler Design and Automaton, Computing Machines, NFA, DFA, Push Down Automata, Turing Machine etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Discorsd.png" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Discord Bot <br> Python
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Experience in Robotics with Arduino Uno R3 Microcontroller.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Web.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Web App Development
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Experience in Web Application Development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projects-Card -->
+    <!-- Projects-Card -->
+    <!-- Projects-Card -->
+    <div class="Projects" id="Projects" style="justify-content: center; display:flex; background-color: rgb(22, 28, 36); padding: 20px; height:min-content;">
+        <!-- <h2 class="EDUANIM">Skills</h2> -->
+        <div class="Navbar">
+            <a class="linker" href="index.html">About Me</a>
+            <a class="linker" href="#Education">Education</a>
+            <a class="linker" href="#Skills">Skills</a>
+            <a class="linker" href="#Projects" style="color: rgb(125, 157, 251);">Projects</a>
+            <a class="linker" href="#Works">Works</a>
+            <a class="linker" href="#Participations">Participations</a>
+            <a class="linker" href="#FunFacts">Fun Facts</a>
+            <a class="linker" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Projects-Card 1-->
+    <div class="Projects" id="Projects" style="justify-content: center; display:flex; background-color: rgb(22, 28, 36); padding: 20px; height:min-content;">
+        <div class="Skills_Card">
+            <img src="image/Burger.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Helmate Bahini
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>A Food Ordering Android Apps for Resturant.</p>
+                    <p style="color: rgb(247, 147, 147);">Developed in 3d semester using Android Studio, Java, Firebase Realtime Database.</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/Helmate_Bahini_3d_Semester/raw/master/app-debug.apk">Download App</a>
+                    <br>
+                    <br>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/Helmate_Bahini_3d_Semester">Full Project Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/DBsoftware.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Android Section Database
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>A simple apps that takes the data of section students and shows values</p>
+                    <p style="color: rgb(247, 147, 147);">Learnet CRUD of Firebase through this apps</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/Android_Section_Database/raw/master/app-debug.apk">Download App</a>
+                    <br>
+                    <br>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/Android_Section_Database">Full Project Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/carmovement.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    FunCar
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>A simple Desktop Application that moves a car</p>
+                    <p style="color: rgb(247, 147, 147);">Learnt Java Gui desktop application development.</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/FUNCAR-SD1_Course-">Project Codes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/calculator.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Simple Android Calculator
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Simple Android Calculator</p>
+                    <p style="color: rgb(247, 147, 147);">Learnt Basic Android Development through this.</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/First_Android_Calculator/raw/master/app-debug.apk">Download App</a>
+                    <br>
+                    <br>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/First_Android_Calculator">Full Project Folder</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects-Card 2-->
+    <div class="Projects" id="Projects" style="justify-content: center; display:flex; background-color: rgb(22, 28, 36); padding: 20px; height:min-content;">
+        <div class="Skills_Card">
+            <img src="image/University.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    University Management System
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Software Development-1 Final exam</p>
+                    <p style="color: rgb(247, 147, 147);">Java and CRUD Operations.</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/Software_Development1_Final_Exam">Project Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Snake.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Login and Snake Game
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>A Java Desktop apps with Login system and Snake Game</p>
+                    <p style="color: rgb(247, 147, 147);">Learnt Java Programming Through the Project</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/LoginSnakeGame">Full Project Folder</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skills_Card">
+            <img src="image/Uvsphere.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Unity Games
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Very simple 3D games</p>
+                    <p style="color: rgb(247, 147, 147);">Learnt a bit Unity Game Engine and C# in the 1st semester. Lost the Game due to old Laptop. Here's the code.</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/Games">Project Codes</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="Skills_Card">
+            <img src="image/Discorsd.png" alt="" class="Skill-Card-img-style">
+            <div class="Skills_Card_Body">
+                <div class="Skills_Card_Title">
+                    Discord Class Routine_Bot
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>A Discord bot sends routine whenever asked.</p>
+                    <p style="color: rgb(247, 147, 147);">A Discord bot using python and replit. Learnt Automated Discord Bot Development by developing this.</p>
+                    <a class="Project_Link" href="https://github.com/Mehrab-Evan/Discord_Class_Routine_Bot">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Works-Card -->
+    <!-- Works-Card -->
+    <!-- Works-Card -->
+    <div class="Works" id="Works" style="justify-content: center; display:flex; background-color: rgb(32, 41, 53); padding: 20px; height:min-content;">
+        <!-- <h2 class="EDUANIM">Skills</h2> -->
+        <div class="Navbar">
+            <a class="linker" href="index.html">About Me</a>
+            <a class="linker" href="#Education">Education</a>
+            <a class="linker" href="#Skills">Skills</a>
+            <a class="linker" href="#Projects">Projects</a>
+            <a class="linker" href="#Works" style="color: rgb(125, 157, 251);">Works</a>
+            <a class="linker" href="#Participations">Participations</a>
+            <a class="linker" href="#FunFacts">Fun Facts</a>
+            <a class="linker" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Works-Card 1-->
+    <div class="Projects" id="Projects" style="justify-content: center; display:flex; background-color: rgb(32, 41, 53); padding: 20px; height:min-content;">
+        <div class="Works_Card">
+            <img src="image/TA.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Teaching Assistant
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>International Islamic University Chittagong</p>
+                    <p>Computer Programming 2 (2nd semester)</p>
+                    <p>February 2022 to June 2022</p>
+                    <p style="color: rgb(247, 147, 147);">Reference : Mohammad Nazmul Arefin</p>
+                    <p style="color: rgb(247, 147, 147);">+880 1797-198813</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/codeimg.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Teaching Assistant
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>International Islamic University Chittagong</p>
+                    <p>Competitive Programming 1 (2nd semester)</p>
+                    <p>July 2022 to current</p>
+                    <p style="color: rgb(247, 147, 147);">Reference : Mohammad Nazmul Arefin</p>
+                    <p style="color: rgb(247, 147, 147);">+880 1797-198813</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/Coaching.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Course Instructor
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Faith Coaching Home (F.C.H)</p>
+                    <p style="color: rgb(247, 147, 147);">Expertised in ICT, English, Physics, Electronics, Biology, Math.</p>
+                    <a class="Project_Link" href="https://www.facebook.com/groups/578210052197283">Visit Faith Coaching Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Participations-Card -->
+    <!-- Participations-Card -->
+    <!-- Participations-Card -->
+    <div class="Participations" id="Participations" style="justify-content: center; display:flex; background-color: rgb(22, 28, 36); padding: 20px; height:min-content;">
+        <!-- <h2 class="EDUANIM">Skills</h2> -->
+        <div class="Navbar">
+            <a class="linker" href="index.html">About Me</a>
+            <a class="linker" href="#Education">Education</a>
+            <a class="linker" href="#Skills">Skills</a>
+            <a class="linker" href="#Projects">Projects</a>
+            <a class="linker" href="#Works">Works</a>
+            <a class="linker" href="#Participations" style="color: rgb(125, 157, 251);">Participations</a>
+            <a class="linker" href="#FunFacts">Fun Facts</a>
+            <a class="linker" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Participations-Card 1-->
+    <div class="Projects" id="Projects" style="justify-content: center; display:flex; background-color: rgb(22, 28, 36); padding: 20px; height:min-content;">
+        <div class="Works_Card">
+            <img src="image/icpc.png" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    ICPC Preli
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>2020-21 : Man in Code - Solved 1</p>
+                    <p>2021-22 : TEN in CODE - Solved 3 (609)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/bdapps.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    BDApps Hackathon 2022
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Team : TEN in CODE</p>
+                    <p>Made a prototype of Centralized Medical Center.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/techfest.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    IIUC Tech Fest
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Team : TEN in CODE</p>
+                    <p>Idea Generation. All Over IIUC. Smart Campus Concepts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FunFacts-Card -->
+    <!-- FunFacts-Card -->
+    <!-- FunFacts-Card -->
+    <div class="FunFacts" id="FunFacts" style="justify-content: center; display:flex; background-color: rgb(34, 43, 56); padding: 20px; height:min-content;">
+        <!-- <h2 class="EDUANIM">Skills</h2> -->
+        <div class="Navbar">
+            <a class="linker" href="index.html">About Me</a>
+            <a class="linker" href="#Education">Education</a>
+            <a class="linker" href="#Skills">Skills</a>
+            <a class="linker" href="#Projects">Projects</a>
+            <a class="linker" href="#Works">Works</a>
+            <a class="linker" href="#Participations">Participations</a>
+            <a class="linker" href="#FunFacts" style="color: rgb(125, 157, 251);">Fun Facts</a>
+            <a class="linker" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- FunFacts-Card 1-->
+    <div class="Projects" id="Projects" style="justify-content: center; display:flex; background-color: rgb(34, 43, 56); padding: 20px; height:min-content;">
+        <div class="Works_Card">
+            <img src="image/Stream.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Game Streaming
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Love to Play PC Story Based Games</p>
+                    <p>Have a Discord Server and Stream sometimes in facebook too.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/Cricketteam.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Local Cricket Team Player
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Team : Stomvo Bangladesh Paharika</p>
+                    <p>Openning Batsman</p>
+                    <p>Fast Bowler</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/embedded.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Football Lover
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Team : Embedded System 50CM</p>
+                    <p>Sometimes play football as striker</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/Driving.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Enjoy Driving Car
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Drive Car sometimes</p>
+                    <p>Driving Licenced</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Works_Card">
+            <img src="image/Bike.jpg" alt="" class="Skill-Card-img-style">
+            <div class="Works_Card_Body">
+                <div class="Skills_Card_Title">
+                    Enjoy Riding Bike
+                </div>  
+                <div class="Skills_Card_Description">
+                    <p>Used to Ride Bikes and Cycling</p>
+                    <p>I enjoy riding bike and cycle very much</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
